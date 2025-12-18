@@ -9,12 +9,11 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "rm": "rm -rf docs",
-    "mv": "mv dist docs",
-    "git": "git add . && git commit && git push origin master",
-    "deploy": "npm run rm && npm run build && npm run mv && npm run git"
+    "deploy": "npm run build && gh-pages -d dist",
+    "eject": "react-scripts eject"
   },
   "dependencies": {
+    "gh-pages": "^6.3.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "react-router-dom": "^7.10.1"
