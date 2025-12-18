@@ -1,10 +1,11 @@
 /* アプリ全体 */
 .app {
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   outline: none;
   background: linear-gradient(135deg, #f5f7fa 0%, #e4e8ec 100%);
+  overflow: hidden;
 }
 
 .app:focus {
@@ -17,24 +18,26 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 24px;
+  padding: 16px;
+  overflow: hidden;
 }
 
 /* 共通スライドスタイル */
 .slide {
   width: 100%;
   max-width: 960px;
-  min-height: 480px;
+  max-height: calc(100vh - 140px);
   background: white;
-  border-radius: 20px;
-  padding: 32px 48px;
+  border-radius: 16px;
+  padding: 24px 36px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+  overflow-y: auto;
 }
 
 .slide h1 {
   color: #4a5568;
-  font-size: 2.4rem;
-  margin: 0 0 20px 0;
+  font-size: 2rem;
+  margin: 0 0 12px 0;
   text-align: center;
   font-weight: 700;
   letter-spacing: -0.5px;
@@ -42,29 +45,29 @@
 
 .slide h2 {
   color: #667eea;
-  font-size: 1.6rem;
-  margin: 0 0 28px 0;
+  font-size: 1.3rem;
+  margin: 0 0 16px 0;
   text-align: center;
   font-weight: 500;
 }
 
 .slide h3 {
   color: #2d3748;
-  font-size: 1.3rem;
-  margin: 28px 0 16px 0;
+  font-size: 1.1rem;
+  margin: 16px 0 10px 0;
   font-weight: 600;
 }
 
 .slide ul, .slide ol {
-  padding-left: 28px;
-  margin: 16px 0;
+  padding-left: 24px;
+  margin: 10px 0;
 }
 
 .slide li {
-  margin: 12px 0;
-  line-height: 1.7;
+  margin: 8px 0;
+  line-height: 1.5;
   color: #4a5568;
-  font-size: 1.15rem;
+  font-size: 1rem;
 }
 
 .slide li strong {
@@ -76,39 +79,39 @@
 .highlight-box {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
-  padding: 28px 32px;
-  border-radius: 16px;
+  padding: 18px 24px;
+  border-radius: 12px;
   text-align: center;
-  font-size: 1.3rem;
-  margin: 28px 0;
-  line-height: 1.6;
+  font-size: 1.1rem;
+  margin: 16px 0;
+  line-height: 1.5;
   box-shadow: 0 4px 16px rgba(102, 126, 234, 0.3);
 }
 
 .highlight-box strong {
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 /* 情報ボックス */
 .info-box {
-  padding: 20px 24px;
-  border-radius: 12px;
-  margin: 20px 0;
+  padding: 14px 18px;
+  border-radius: 10px;
+  margin: 12px 0;
 }
 
 .info-box h3 {
-  margin: 0 0 14px 0;
-  font-size: 1.2rem;
+  margin: 0 0 10px 0;
+  font-size: 1rem;
 }
 
 .info-box li {
-  font-size: 1.05rem;
+  font-size: 0.95rem;
 }
 
 .info-box p {
-  font-size: 1.05rem;
-  margin: 8px 0;
+  font-size: 0.95rem;
+  margin: 6px 0;
   color: #4a5568;
 }
 
@@ -144,28 +147,28 @@
   background: linear-gradient(135deg, #ebf4ff 0%, #e9d8fd 100%);
   border: 2px solid #667eea;
   color: #553c9a;
-  padding: 16px 24px;
-  border-radius: 12px;
+  padding: 12px 18px;
+  border-radius: 10px;
   text-align: center;
   font-weight: 700;
-  font-size: 1.2rem;
-  margin: 24px 0;
+  font-size: 1rem;
+  margin: 14px 0;
 }
 
 /* コードブロック */
 .code-block {
   background: #1a202c;
-  border-radius: 12px;
-  padding: 20px 24px;
+  border-radius: 10px;
+  padding: 14px 18px;
   overflow-x: auto;
-  margin: 20px 0;
+  margin: 12px 0;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .code-block code {
   font-family: "JetBrains Mono", "Fira Code", "Consolas", "Monaco", monospace;
-  font-size: 0.95rem;
-  line-height: 1.6;
+  font-size: 0.8rem;
+  line-height: 1.5;
   color: #e2e8f0;
   white-space: pre;
 }
@@ -606,27 +609,27 @@
 
 .parent-component {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  border-radius: 14px;
-  padding: 18px;
+  border-radius: 12px;
+  padding: 14px;
   color: white;
   box-shadow: 0 4px 16px rgba(102, 126, 234, 0.3);
 }
 
 .parent-component h2 {
   color: white;
-  margin: 0 0 14px 0;
-  font-size: 1.3rem;
+  margin: 0 0 10px 0;
+  font-size: 1.1rem;
   text-align: left;
   font-weight: 600;
 }
 
 .data-display {
   background: rgba(255, 255, 255, 0.2);
-  padding: 8px 14px;
-  border-radius: 8px;
-  margin: 4px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  margin: 3px;
   display: inline-block;
-  font-size: 0.95rem;
+  font-size: 0.85rem;
   backdrop-filter: blur(4px);
 }
 
@@ -638,12 +641,12 @@
   background: white;
   color: #667eea;
   border: none;
-  padding: 10px 22px;
-  border-radius: 8px;
-  font-size: 0.95rem;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 0.85rem;
   font-weight: 700;
   cursor: pointer;
-  margin: 12px 0;
+  margin: 8px 0;
   transition: all 0.2s;
 }
 
@@ -655,8 +658,8 @@
 .children-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 14px;
-  margin-top: 18px;
+  gap: 10px;
+  margin-top: 12px;
 }
 
 @media (max-width: 700px) {
@@ -667,45 +670,45 @@
 
 .child-component, .sibling-component {
   background: white;
-  border-radius: 12px;
-  padding: 14px;
+  border-radius: 10px;
+  padding: 10px;
   color: #2d3748;
   text-align: left;
 }
 
 .child-component h3 {
   color: #2b6cb0;
-  margin: 0 0 12px 0;
-  padding-bottom: 8px;
-  border-bottom: 3px solid #4299e1;
-  font-size: 1.1rem;
+  margin: 0 0 8px 0;
+  padding-bottom: 6px;
+  border-bottom: 2px solid #4299e1;
+  font-size: 0.95rem;
   text-align: left;
   font-weight: 600;
 }
 
 .sibling-component h3 {
   color: #276749;
-  margin: 0 0 12px 0;
-  padding-bottom: 8px;
-  border-bottom: 3px solid #48bb78;
-  font-size: 1.1rem;
+  margin: 0 0 8px 0;
+  padding-bottom: 6px;
+  border-bottom: 2px solid #48bb78;
+  font-size: 0.95rem;
   text-align: left;
   font-weight: 600;
 }
 
 .child-component h4, .sibling-component h4 {
   color: #4a5568;
-  margin: 12px 0 8px 0;
-  font-size: 0.9rem;
+  margin: 8px 0 6px 0;
+  font-size: 0.8rem;
   text-align: left;
   font-weight: 600;
 }
 
 .props-section {
   background: #ebf4ff;
-  padding: 12px;
-  border-radius: 10px;
-  margin-bottom: 12px;
+  padding: 8px;
+  border-radius: 8px;
+  margin-bottom: 8px;
 }
 
 .props-section h4 {
@@ -723,8 +726,8 @@
 
 .local-section {
   background: #fffaf0;
-  padding: 12px;
-  border-radius: 10px;
+  padding: 8px;
+  border-radius: 8px;
 }
 
 .local-section h4 {
@@ -742,18 +745,18 @@
 
 .button-group {
   display: flex;
-  gap: 8px;
+  gap: 6px;
   flex-wrap: wrap;
-  margin-top: 10px;
+  margin-top: 6px;
 }
 
 .child-button {
   background: #4299e1;
   color: white;
   border: none;
-  padding: 8px 14px;
-  border-radius: 6px;
-  font-size: 0.85rem;
+  padding: 6px 10px;
+  border-radius: 5px;
+  font-size: 0.75rem;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.2s;
@@ -768,12 +771,12 @@
   background: #ed8936;
   color: white;
   border: none;
-  padding: 8px 14px;
-  border-radius: 6px;
-  font-size: 0.85rem;
+  padding: 6px 10px;
+  border-radius: 5px;
+  font-size: 0.75rem;
   font-weight: 600;
   cursor: pointer;
-  margin-top: 10px;
+  margin-top: 6px;
   transition: all 0.2s;
 }
 
@@ -791,23 +794,23 @@
 }
 
 .note {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   color: #718096;
-  margin-top: 8px;
-  line-height: 1.5;
+  margin-top: 6px;
+  line-height: 1.4;
 }
 
 .child-component p, .sibling-component p {
-  margin: 6px 0;
-  font-size: 0.9rem;
+  margin: 4px 0;
+  font-size: 0.8rem;
   color: #4a5568;
 }
 
 .child-component strong, .sibling-component strong {
   color: #2d3748;
   background: rgba(0, 0, 0, 0.06);
-  padding: 3px 8px;
-  border-radius: 4px;
+  padding: 2px 6px;
+  border-radius: 3px;
   font-weight: 600;
 }
 
