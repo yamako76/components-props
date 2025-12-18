@@ -25,7 +25,7 @@ export const Slide14_Summary = () => {
 
       <div className="info-box orange">
         <h3>データの流れ</h3>
-        <p>親のState更新 → 子・従兄弟も再レンダリング</p>
+        <p>親のState更新 → 子・兄弟も再レンダリング</p>
         <p>子のローカルState更新 → 自分だけ再レンダリング</p>
       </div>
     </div>

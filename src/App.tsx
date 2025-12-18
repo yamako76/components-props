@@ -35,7 +35,7 @@ const slides = [
   { component: Slide10_Demo, title: "総合デモ" },
   { component: Slide11_UpdateParent, title: "親のデータ更新" },
   { component: Slide12_UpdateChild, title: "子のデータ更新" },
-  { component: Slide13_Cousin, title: "従兄弟の関係" },
+  { component: Slide13_Cousin, title: "兄弟の関係" },
   { component: Slide16_GrandchildRelation, title: "親子孫の関係" },
   { component: Slide16b_GrandchildDemo, title: "親子孫デモ" },
   { component: Slide14_Summary, title: "まとめ" },

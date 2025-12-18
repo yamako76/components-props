@@ -9,7 +9,7 @@ export const Slide12_UpdateChild = () => {
         <ol>
           <li>子コンポーネントだけが再レンダリング</li>
           <li>親には影響しない</li>
-          <li>従兄弟にも影響しない</li>
+          <li>兄弟にも影響しない</li>
         </ol>
       </div>
 

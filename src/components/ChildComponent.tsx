@@ -60,7 +60,7 @@ export const ChildComponent = ({
           子のlocalCountを更新
         </button>
         <p className="note">
-          ※ このボタンを押しても親・従兄弟には影響しない
+          ※ このボタンを押しても親・兄弟には影響しない
         </p>
       </div>
     </div>

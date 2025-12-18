@@ -40,7 +40,7 @@ export const ParentComponent = () => {
           onUpdateMessage={updateMessage}
         />
 
-        {/* 従兄弟コンポーネント：同じ親からPropsを受け取る */}
+        {/* 兄弟コンポーネント：同じ親からPropsを受け取る */}
         <CousinComponent count={count} message={message} />
       </div>
     </div>

@@ -10,7 +10,7 @@ export const Slide11_UpdateParent = () => {
           <li>親コンポーネントが再レンダリング</li>
           <li>子にも新しいPropsが渡される</li>
           <li>子コンポーネントも再レンダリング</li>
-          <li>従兄弟も同じPropsを受け取っていれば再レンダリング</li>
+          <li>兄弟も同じPropsを受け取っていれば再レンダリング</li>
         </ol>
       </div>
 

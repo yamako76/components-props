@@ -17,7 +17,7 @@ export const Slide2_Agenda = () => {
         </li>
         <li>
           <strong>データはどう更新される？</strong>
-          <span>親・子・従兄弟の関係</span>
+          <span>親・子・兄弟の関係</span>
         </li>
       </ol>
     </div>
