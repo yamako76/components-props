@@ -5,9 +5,6 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   base: "/components-props/",
-  build: {
-    outDir: "build",
-  },
   server: {
     watch: {
       usePolling: true,
