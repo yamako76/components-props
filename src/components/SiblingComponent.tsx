@@ -1,13 +1,13 @@
 import { useState } from "react";
 
 // Propsの型定義
-type CousinProps = {
+type SiblingProps = {
   count: number;
   message: string;
 };
 
 // 兄弟コンポーネント：親から同じPropsを受け取る
-export const CousinComponent = ({ count, message }: CousinProps) => {
+export const SiblingComponent = ({ count, message }: SiblingProps) => {
   // 兄弟独自のローカルState
   const [localValue, setLocalValue] = useState("初期値");
 
@@ -16,7 +16,7 @@ export const CousinComponent = ({ count, message }: CousinProps) => {
   };
 
   return (
-    <div className="cousin-component">
+    <div className="sibling-component">
       <h3>兄弟コンポーネント</h3>
 
       <div className="props-section">

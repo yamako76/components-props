@@ -665,7 +665,7 @@
   }
 }
 
-.child-component, .cousin-component {
+.child-component, .sibling-component {
   background: white;
   border-radius: 12px;
   padding: 14px;
@@ -683,7 +683,7 @@
   font-weight: 600;
 }
 
-.cousin-component h3 {
+.sibling-component h3 {
   color: #276749;
   margin: 0 0 12px 0;
   padding-bottom: 8px;
@@ -693,7 +693,7 @@
   font-weight: 600;
 }
 
-.child-component h4, .cousin-component h4 {
+.child-component h4, .sibling-component h4 {
   color: #4a5568;
   margin: 12px 0 8px 0;
   font-size: 0.9rem;
@@ -713,11 +713,11 @@
   margin-top: 0;
 }
 
-.cousin-component .props-section {
+.sibling-component .props-section {
   background: #f0fff4;
 }
 
-.cousin-component .props-section h4 {
+.sibling-component .props-section h4 {
   color: #276749;
 }
 
@@ -732,11 +732,11 @@
   margin-top: 0;
 }
 
-.cousin-component .local-section {
+.sibling-component .local-section {
   background: #fff5f5;
 }
 
-.cousin-component .local-section h4 {
+.sibling-component .local-section h4 {
   color: #c53030;
 }
 
@@ -782,11 +782,11 @@
   transform: translateY(-1px);
 }
 
-.cousin-component .local-button {
+.sibling-component .local-button {
   background: #e53e3e;
 }
 
-.cousin-component .local-button:hover {
+.sibling-component .local-button:hover {
   background: #c53030;
 }
 
@@ -797,13 +797,13 @@
   line-height: 1.5;
 }
 
-.child-component p, .cousin-component p {
+.child-component p, .sibling-component p {
   margin: 6px 0;
   font-size: 0.9rem;
   color: #4a5568;
 }
 
-.child-component strong, .cousin-component strong {
+.child-component strong, .sibling-component strong {
   color: #2d3748;
   background: rgba(0, 0, 0, 0.06);
   padding: 3px 8px;

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { ChildComponent } from "./ChildComponent";
-import { CousinComponent } from "./CousinComponent";
+import { SiblingComponent } from "./SiblingComponent";
 
 // 親コンポーネント：データの「持ち主」
 export const ParentComponent = () => {
@@ -41,7 +41,7 @@ export const ParentComponent = () => {
         />
 
         {/* 兄弟コンポーネント：同じ親からPropsを受け取る */}
-        <CousinComponent count={count} message={message} />
+        <SiblingComponent count={count} message={message} />
       </div>
     </div>
   );
