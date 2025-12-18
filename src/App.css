@@ -767,6 +767,24 @@
   transform: translateY(-1px);
 }
 
+.sibling-button {
+  background: #48bb78;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 5px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 6px;
+  transition: all 0.2s;
+}
+
+.sibling-button:hover {
+  background: #38a169;
+  transform: translateY(-1px);
+}
+
 .local-button {
   background: #ed8936;
   color: white;

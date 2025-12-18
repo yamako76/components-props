@@ -13,6 +13,10 @@ export const ParentComponent = () => {
     setCount((prev) => prev + 1);
   };
 
+  const decrementCount = () => {
+    setCount((prev) => prev - 1);
+  };
+
   const updateMessage = (newMessage: string) => {
     setMessage(newMessage);
   };
@@ -41,7 +45,7 @@ export const ParentComponent = () => {
         />
 
         {/* 兄弟コンポーネント：同じ親からPropsを受け取る */}
-        <SiblingComponent count={count} message={message} />
+        <SiblingComponent count={count} message={message} onDecrement={decrementCount} />
       </div>
     </div>
   );

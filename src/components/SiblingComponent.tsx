@@ -4,10 +4,11 @@ import { useState } from "react";
 type SiblingProps = {
   count: number;
   message: string;
+  onDecrement: () => void;
 };
 
 // 兄弟コンポーネント：親から同じPropsを受け取る
-export const SiblingComponent = ({ count, message }: SiblingProps) => {
+export const SiblingComponent = ({ count, message, onDecrement }: SiblingProps) => {
   // 兄弟独自のローカルState
   const [localValue, setLocalValue] = useState("初期値");
 
@@ -27,10 +28,12 @@ export const SiblingComponent = ({ count, message }: SiblingProps) => {
         <p>
           message: <strong>"{message}"</strong>
         </p>
+
+        <button onClick={onDecrement} className="sibling-button">
+          親のcountを減らす
+        </button>
         <p className="note">
-          ※ 子コンポーネントが親のデータを更新すると、
-          <br />
-          兄弟も自動的に再レンダリングされる！
+          ※ 兄弟も関数を受け取れば親を更新できる！
         </p>
       </div>
 

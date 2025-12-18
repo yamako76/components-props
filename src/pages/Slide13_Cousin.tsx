@@ -21,14 +21,14 @@ export const Slide13_Cousin = () => {
               <strong>子B（兄弟）</strong>
               <ul>
                 <li>Props受取</li>
-                <li>表示のみ</li>
+                <li>親を更新可</li>
                 <li>localValue (独自State)</li>
               </ul>
             </div>
           </div>
 
           <p className="cousin-note">
-            ※ 子Aが親を更新 → 兄弟の子Bも再レンダリング
+            ※ どちらの子も関数を受け取れば親を更新できる
           </p>
         </div>
       </div>
